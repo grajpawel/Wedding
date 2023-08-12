@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Bec and Scott tie the knot.">
+<meta name="description" content="Martyna i Paweł">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#ffffff">
-<title>Bec and Scott tie the knot</title>
+<title>Martyna i Paweł</title>
 <link rel="stylesheet" href="bulma.css">
 <link rel="stylesheet" href="slider.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
 <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -136,7 +136,7 @@ section {
 </style>
 <script>
 $(document).ready(function() {
-	$(".countdown").countdown({until: new Date("Mar 17 2018 16:00:00 +1100"), compact: true}).show().before("(").after(")");
+	$(".countdown").countdown({until: new Date("Nov 18 2023 17:00:00 +0100"), compact: true}).show().before("(").after(")");
 
 	$("#location").click(function() {
 		$("#location iframe").css("pointer-events", "auto");
@@ -239,7 +239,7 @@ $(document).ready(function() {
 				<div class="container">
 					<div class="nav-left" style="overflow: hidden;">
 						<a class="nav-item">
-						<span style="font-family: 'Satisfy', cursive; font-size: 2.4rem; color: #fff; margin-top: 10px;">b&amp;s</span>
+						<span style="font-family: 'Dancing Script', cursive; font-size: 2.4rem; color: #fff; margin-top: 10px;">m&amp;p</span>
 						</a>
 					</div>
 					<span class="nav-toggle">
@@ -249,19 +249,13 @@ $(document).ready(function() {
 					</span>
 					<div class="nav-right nav-menu">
 						<a href="#details" class="nav-item">
-						Details
+						Szczegóły
 						</a>
 						<a href="#location" class="nav-item">
-						Location
+						Miejsce
 						</a>
-						<a href="#celebrate" class="nav-item">
-						Celebrate
-						</a>
-						<a href="#gallery" class="nav-item">
-						Gallery
-						</a>
-						<a href="#accomodation" class="nav-item">
-						Accomodation
+						<a href="#plan" class="nav-item">
+							Plan dnia
 						</a>
 						<a href="#rsvp" class="nav-item">
 						RSVP
@@ -271,16 +265,13 @@ $(document).ready(function() {
 			</header>
 		</div>
 	</section>
-	<section class="hero is-dark is-fullheight" style="position: relative; background-image: url(images/becnscott.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover; background-attachment: scroll;">
+	<section class="hero is-dark is-fullheight" style="position: relative; background-image: url(images/buzi.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover; background-attachment: scroll;">
 		<!-- Hero content: will be in the middle -->
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
-					bec &amp; scott
+				<h1 class="title is-1" style="font-family: 'Dancing Script', cursive; font-size: 5rem;">
+					martyna &amp; paweł
 				</h1>
-				<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
-					tie the knot
-				</h2>
 			</div>
 		</div>
 		<!-- Hero footer: will stick at the bottom -->
@@ -294,9 +285,21 @@ $(document).ready(function() {
 		<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 0; max-height: 100vh;"></div>
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
-					Our big day
+				<h1 class="title is-1" style="font-family: 'Dancing Script', cursive; font-size: 5rem;">
+					Nasz wielki dzień
 				</h1>
+				<button onclick="getParameters()"> Get URL parameters </button>
+				<script>
+				function getParameters() {
+					let urlString = window.location.href;
+					let paramString = urlString.split('?')[1];
+					let queryString = new URLSearchParams(paramString);
+					for(let pair of queryString.entries()) {
+						console.log("Key is:" + pair[0]);
+						console.log("Value is:" + pair[1]);
+					}
+				}
+				</script>
 				<div class="columns is-centered">
 					<div class="column is-5 is-4-desktop">
 						<br>
@@ -304,10 +307,10 @@ $(document).ready(function() {
 							<svg class="fa icon-clock-o"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock-o"></use></svg>
 						</span>
 						<br><br>
-						<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
-							when
+						<h2 class="subtitle is-3" style="font-family: 'Dancing Script', cursive; font-size: 3.33rem;">
+							kiedy
 						</h2>
-						<p class="subtitle is-5">17th Mar 2018<br>Ceremony begins 4pm<br><span class="countdown" style="display: none;"></span></p>
+						<p class="subtitle is-5">18 listopada 2023<br>Ceremonia zaczyna się o 17:00<br><span class="countdown" style="display: none;"></span></p>
 					</div>
 					<div class="column is-5 is-4-desktop">
 						<br>
@@ -315,22 +318,55 @@ $(document).ready(function() {
 							<svg class="fa icon-map-marker"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-map-marker"></use></svg>
 						</span>
 						<br><br>
-						<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
-							where
+						<h2 class="subtitle is-3" style="font-family: 'Dancing Script', cursive; font-size: 3.33rem;">
+							gdzie
 						</h2>
-						<p class="subtitle is-5">Lindenderry Estate<br>142 Arthurs Seat Road<br>Red Hill 3937, Australia</p>
+						<p class="subtitle is-5">Dwór Uphagena<br>Prof. Kieturakisa 1<br>80-742 Gdańsk</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="hero is-black is-bold is-fullheight" id="location" style="position: relative;">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12512.494910984142!2d145.0172993!3d-38.3692591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24ded6fab6f89ecc!2sLindenderry+at+Red+Hill!5e0!3m2!1sen!2sau!4v1493125032486" frameborder="0" width="100%" height="100%" style="border:0; pointer-events: none; height: 100%; position: absolute; top:0; bottom:0;left:0;right:0;" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11064.490122314268!2d18.658966987375567!3d54.338910099349654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd732b8abf4a95%3A0x215ef9b8c303f15e!2sARCHE%20Dw%C3%B3r%20Uphagena%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1691875234084!5m2!1spl!2spl" frameborder="0" width="100%" height="100%" style="border:0; pointer-events: none; height: 100%; position: absolute; top:0; bottom:0;left:0;right:0;" allowfullscreen></iframe>
+	</section>
+	<section class="hero is-danger is-bold is-fullheight" id="plan" style="position: relative;">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
+					Celebrate with us
+				</h1>
+				<div class="columns is-centered">
+					<div class="column is-5 is-4-desktop">
+						<br>
+						<span class="icon is-huge">
+							<svg class="fa icon-moon-o"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-moon-o"></use></svg>
+						</span>
+						<br><br>
+						<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
+							night before
+						</h2>
+						<p class="subtitle is-5"><a href="http://www.theepicurean.com.au/" target="_blank"><u>The Epicurean</u></a> is a beautiful old packers shed that serves fresh Italian food using locally grown produce. We shall be making a reservation for dinner on the Friday night for 7pm ($50 per head + drinks). If you'd like to join us, let us know <a href="mailto:rsvp@becandscotttietheknot.com?subject=Wedding RSVP"><u>when you RSVP</u></a>.</p>
+					</div>
+					<div class="column is-5 is-4-desktop">
+						<br>
+						<span class="icon heartbeat is-huge">
+							<svg class="fa icon-heart-o"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart-o"></use></svg>
+						</span>
+						<br><br>
+						<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
+							morning after
+						</h2>
+						<p class="subtitle is-5">Lindenderry shall be serving breakfast for all hotel guests the morning after at 9am. Non-hotel guests are welcome to join us as well, but will need to pay for their own breakfast.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="hero is-info is-bold is-fullheight" id="rsvp" style="position: relative;">
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
+				<h1 class="title is-1" style="font-family: 'Dancing Script', cursive; font-size: 5rem;">
 					RSVP
 				</h1>
 				<br>
